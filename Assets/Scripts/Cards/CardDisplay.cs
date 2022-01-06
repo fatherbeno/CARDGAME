@@ -5,30 +5,53 @@ using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour
 {
-    [SerializeField]
-    private CardInformation card; //Init card information from editor
+    private CardCore cardCore;
 
     [SerializeField]
     private Text nameText;
     [SerializeField]
     private Text descriptionText;
-
     [SerializeField]
-    private Image artworkImage;
+    private Image artImage;
+    [SerializeField]
+    private Image cardBackImage;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        if(card != null)
+        cardCore = GetComponent<CardCore>();
+
+        cardBackImage.gameObject.SetActive(false);
+
+        if (cardCore != null)
         {
-            card.Print();
-            nameText.text = card.name;
-            descriptionText.text = card.description;
-            artworkImage.sprite = card.artwork;
+            nameText.text = cardCore.cardName;
+            descriptionText.text = cardCore.cardDescription;
+            artImage.sprite = cardCore.cardArt;
+            cardBackImage.sprite = cardCore.cardBackArt;
         }
         else
         {
-            Debug.LogError("Card information has not been supplied for " + this.name);
+            Debug.LogError("Card Display: Card Core not found on " + this.name);
+            nameText.text = "ERROR";
+            descriptionText.text = "ERROR";
+        }
+    }
+
+    public void FlipCard(bool showFace)
+    {
+        if(showFace == true)
+        {
+            cardBackImage.gameObject.SetActive(false);
+            artImage.gameObject.SetActive(true);
+            nameText.gameObject.SetActive(true);
+            descriptionText.gameObject.SetActive(true);
+        }
+        else
+        {
+            cardBackImage.gameObject.SetActive(true);
+            artImage.gameObject.SetActive(false);
+            nameText.gameObject.SetActive(false);
+            descriptionText.gameObject.SetActive(false);
         }
     }
 }

@@ -11,6 +11,7 @@ public class CardInformation : ScriptableObject
     public string description;
 
     public Sprite artwork;
+    public Sprite cardBack;
 
     public void Print()
     {

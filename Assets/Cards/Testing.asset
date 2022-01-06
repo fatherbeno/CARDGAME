@@ -16,3 +16,4 @@ MonoBehaviour:
   name: Seth
   description: Seth is the big boss
   artwork: {fileID: 0}
+  cardBack: {fileID: 7367628460304092498, guid: 066a8b79288bb264faecbf8d02bbff63, type: 3}
