@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardDisplay : MonoBehaviour
+public class CardDisplayOLD : MonoBehaviour
 {
-    private CardCore cardCore;
+    private CardCoreOLD cardCore;
 
     [SerializeField]
     private Text nameText;
@@ -18,7 +18,7 @@ public class CardDisplay : MonoBehaviour
 
     private void Awake()
     {
-        cardCore = GetComponent<CardCore>();
+        cardCore = GetComponent<CardCoreOLD>();
 
         cardBackImage.gameObject.SetActive(false);
 

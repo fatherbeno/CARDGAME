@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardDragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class CardDraggingOLD : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private Vector2 cursorDisplacement;
     private Vector3 cursorPosition;

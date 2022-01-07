@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardCore : MonoBehaviour
+public class CardCoreOLD : MonoBehaviour
 {
     //This script is to hold any information and supply any functions that multiple card scripts require
 
     [SerializeField]
-    private CardInformation card;
+    private CardInformationOLD card;
 
     [HideInInspector]
     public int cardID;

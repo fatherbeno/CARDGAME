@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardModel : MonoBehaviour
+public class CardModelOLD : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
 
@@ -12,7 +12,7 @@ public class CardModel : MonoBehaviour
     private Sprite cardBack;
 
     [SerializeField]
-    private CardInformation card;
+    private CardInformationOLD card;
     [HideInInspector]
     public int cardId;
     [HideInInspector]

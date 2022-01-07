@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DebugChangeCard : MonoBehaviour
+public class DebugChangeCardOLD : MonoBehaviour
 {
-    private CardModel cardModel;
+    private CardModelOLD cardModel;
     private int cardId = 0;
 
     [SerializeField]
@@ -13,7 +13,7 @@ public class DebugChangeCard : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        cardModel = card.GetComponent<CardModel>();
+        cardModel = card.GetComponent<CardModelOLD>();
     }
 
     private void OnGUI()

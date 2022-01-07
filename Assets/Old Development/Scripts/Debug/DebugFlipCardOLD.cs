@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DebugFlipCard : MonoBehaviour
+public class DebugFlipCardOLD : MonoBehaviour
 {
     private bool showFace = true;
 
     [SerializeField]
     private GameObject cardObject;
 
-    private CardDisplay cardDisplay;
+    private CardDisplayOLD cardDisplay;
 
     private void Awake()
     {
-        cardDisplay = cardObject.GetComponent<CardDisplay>();
+        cardDisplay = cardObject.GetComponent<CardDisplayOLD>();
 
         if (cardDisplay != null)
             Debug.Log("Debug Flip Card: Card Display loaded correctly");
