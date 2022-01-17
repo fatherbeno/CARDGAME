@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf27ebcb7b30c2478c0886955cc4936, type: 3}
+  m_Name: GonnaCry
+  m_EditorClassIdentifier: 
+  cardId: 0
+  cardName: Gonna Cry?
+  cardArt: {fileID: 2800000, guid: 53b1debece14c604cbfe15f34cea3a68, type: 3}
+  cardDescription: I'm gonna put some dirt in your eye
+  cardTier: 0
+  cardCost: 0
+  cardHealth: 1
+  cardAttack: 4
+  cardArmour: 0
+  cardType: 0
+  bodyPartType: 1
+  accessoryType: 0
