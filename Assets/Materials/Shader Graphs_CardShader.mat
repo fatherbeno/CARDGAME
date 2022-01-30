@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CardArt:
-        m_Texture: {fileID: 2800000, guid: 8132c810eeebfd8488577bef4a2a8416, type: 3}
+        m_Texture: {fileID: 2800000, guid: 53b1debece14c604cbfe15f34cea3a68, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
